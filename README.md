@@ -113,9 +113,9 @@ A client can try, but it needs to be prepared to handle an error in case the fol
 - `SearchRestrictions` - Restrictions on `$search` expressions
 
 #### Data Modification Capabilities
-- `InsertRestrictions`
-- `UpdateRestrictions`
-- `DeleteRestrictions`
+- `InsertRestrictions` - Restrictions on insert operations
+- `UpdateRestrictions` - Restrictions on update operations
+- `DeleteRestrictions` - Restrictions on delete operations
 
 ## Measures
 Terms describing monetary amounts and measured quantities.
