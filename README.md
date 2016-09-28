@@ -1,6 +1,19 @@
 # OData-V4.0-Vocabularies
 A cheatsheet for OData Core, Capability, and Measures Vocabularies
 
+### Disclaimer
+I take no responsibility for the correctness or currency of this data. The authoritative source can be found [here](http://www.odata.org/vocabularies/).
+
+The contents of this document are derived from works bearing the following copyright
+
+```
+OData Version 4.0
+OASIS Standard
+24 February 2014
+Copyright (c) OASIS Open 2014. All Rights Reserved.
+Source: http://docs.oasis-open.org/odata/odata/v4.0/os/vocabularies/
+```
+
 ## Core
 Core terms needed to write vocabularies
 
