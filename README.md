@@ -15,7 +15,7 @@ Source: http://docs.oasis-open.org/odata/odata/v4.0/os/vocabularies/
 ```
 
 ## Core
-Core terms needed to write vocabularies
+Core terms needed to write vocabularies.
 
 #### Documentation
 - `Description` - A brief description of a model element
@@ -53,6 +53,26 @@ Core terms needed to write vocabularies
 ## Capabilities
 The Capabilities vocabulary aims to provide a way for service authors to describe certain capabilities of an OData Service.
 
+There are some capabilities which are strongly recommended for services to support even though they are optional. Support for `$top` and `$skip` is a good example as supporting these query options helps with performance of a service and are essential. Such capabilities are assumed to be default capabilities of an OData service even in the case that a capabilities annotation doesn’t exist. Capabilities annotations are mainly expected to be used to explicitly specify that a service doesn’t support such capabilities. Capabilities annotations can as well be used to declaratively specify the support of such capabilities. On the other hand, there are some capabilities that a service may choose to support or not support and in varying degrees. `$filter` and `$orderby` are such good examples. This vocabulary aims to define terms to specify support or no support for such capabilities. 
+A service is assumed to support by default the following capabilities even though an annotation doesn’t exist:
+- Countability (`$count`, `$inlinecount`)
+- Client pageability (`$top`, `$skip`)
+- Expandability (`$expand`)
+- Indexability by key
+- Batch support (`$batch`)
+- Navigability of navigation properties 
+
+A service is expected to support the following capabilities. If not supported, the service is expected to call out the restrictions using annotations:
+- Filterability (`$filter`)
+- Sortability (`$orderby`)
+- Queryability of top level entity sets
+- Query functions A client cannot assume that a service supports certain capabilities. 
+
+A client can try, but it needs to be prepared to handle an error in case the following capabilities are not supported:
+- Insertability
+- Updatability
+- Deletability
+
 #### Conformance Level
 #### Request Capabilities
 #### Supported Preferences
@@ -60,7 +80,7 @@ The Capabilities vocabulary aims to provide a way for service authors to describ
 #### Data Modification Capabilities
 
 ## Measures
-Terms describing monetary amounts and measured quantities
+Terms describing monetary amounts and measured quantities.
 
 - `ISOCurrency` - The currency for this monetary amount as an [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code
 - `Scale` - The number of significant decimal places in the scale part (less than or equal to the number declared in the Scale facet)
