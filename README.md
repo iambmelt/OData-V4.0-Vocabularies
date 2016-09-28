@@ -45,7 +45,7 @@ Core terms needed to write vocabularies.
 - `Immutable` - A value for this non-key property can be provided on insert and remains unchanged on update
 - `Computed` - A value for this property is generated on both insert and update
 - `IsURL` - Properties and terms annotated with this term MUST contain a valid URL
-- `AcceptableMediaTypes` - Lists the MIME types acceptable for the annotated entity type marked with HasStream="true" or the annotated stream property
+- `AcceptableMediaTypes` - Lists the MIME types acceptable for the annotated entity type marked with `HasStream="true"` or the annotated stream property
 - `MediaType`
 - `IsMediaType` - Properties and terms annotated with this term MUST contain a valid MIME type
 - `OptimisticConcurrency` - Data modification requires the use of Etags. A non-empty collection contains the set of properties that are used to compute the ETag
