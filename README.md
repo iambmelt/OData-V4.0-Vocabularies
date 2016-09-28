@@ -1,4 +1,4 @@
-# OData-Vocabularies
+# OData-V4.0-Vocabularies
 A cheatsheet for OData Core, Capability, and Measures Vocabularies
 
 ## Core
