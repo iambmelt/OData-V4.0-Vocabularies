@@ -18,11 +18,31 @@ Source: http://docs.oasis-open.org/odata/odata/v4.0/os/vocabularies/
 Core terms needed to write vocabularies
 
 #### Documentation
+- `Description`
+- `LongDescription`
+
 #### Localization
+- `IsLanguageDependent`
+
 #### Term Restrictions
+- `RequiresType`
+
 #### Resource Paths
+- `ResourcePath`
+- `DereferenceableIDs`
+- `ConventionalIDs`
+
 #### Permissions
+- `Permissions`
+
 #### Metadata Extensions
+- `Immutable`
+- `Computed`
+- `IsURL`
+- `AcceptableMediaTypes`
+- `MediaType`
+- `IsMediaType`
+- `OptimisticConcurrency`
 
 ## Capabilities
 The Capabilities vocabulary aims to provide a way for service authors to describe certain capabilities of an OData Service.
