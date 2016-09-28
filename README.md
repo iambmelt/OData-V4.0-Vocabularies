@@ -100,17 +100,17 @@ A client can try, but it needs to be prepared to handle an error in case the fol
 - `ChangeTracking` - Change tracking capabilities of this service or entity set
 
 #### Query Capabilities
-- `CountRestrictions`
-- `NavigationRestrictions`
-- `IndexableByKey`
-- `TopSupported`
-- `SkipSupported`
-- `BatchSupported`
-- `FilterFunctions`
-- `FilterRestrictions`
-- `SortRestrictions`
-- `ExpandRestrictions`
-- `SearchRestrictions`
+- `CountRestrictions` - Restrictions on /$count path suffix and $count=true system query option
+- `NavigationRestrictions` - Restrictions on navigating properties according to OData URL conventions
+- `IndexableByKey` - Supports key values according to OData URL conventions
+- `TopSupported` - Supports `$top`
+- `SkipSupported` - Supports `$skip`
+- `BatchSupported` - Supports `$batch` requests
+- `FilterFunctions` - List of functions supported in `$filter`
+- `FilterRestrictions` - Restrictions on `$filter` expressions
+- `SortRestrictions` - Restrictions on `$orderby` expressions
+- `ExpandRestrictions` - Restrictions on `$expand` expressions
+- `SearchRestrictions` - Restrictions on `$search` expressions
 
 #### Data Modification Capabilities
 - `InsertRestrictions`
