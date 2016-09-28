@@ -87,12 +87,17 @@ A client can try, but it needs to be prepared to handle an error in case the fol
 - `AcceptableEncodings` - List of acceptable compression methods for (`$batch`) requests, e.g. `gzip`
 
 #### Supported Preferences
-- `AsynchronousRequestsSupported`
-- `BatchContinueOnErrorSupported`
-- `IsolationSupported`
-- `CallbackSupported`
-- `CrossJoinSupported`
-- `ChangeTracking`
+- `AsynchronousRequestsSupported` - Service supports the asynchronous request preference
+- `BatchContinueOnErrorSupported` - Service supports the continue on error preference
+- `IsolationSupported` - Supported odata.isolation levels
+
+| IsolationLevel | Value |
+|:--------------:|:-----:|
+|    Snapshot    |   1   |
+
+- `CallbackSupported` - Supports callbacks for the specified protocols
+- `CrossJoinSupported` - Supports cross joins for the entity sets in this container
+- `ChangeTracking` - Change tracking capabilities of this service or entity set
 
 #### Query Capabilities
 - `CountRestrictions`
