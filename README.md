@@ -18,31 +18,37 @@ Source: http://docs.oasis-open.org/odata/odata/v4.0/os/vocabularies/
 Core terms needed to write vocabularies
 
 #### Documentation
-- `Description`
-- `LongDescription`
+- `Description` - A brief description of a model element
+- `LongDescription` - A lengthy description of a model element
 
 #### Localization
-- `IsLanguageDependent`
+- `IsLanguageDependent` - Properties and terms annotated with this term are language-dependent
 
 #### Term Restrictions
-- `RequiresType`
+- `RequiresType` - This is the type to use for all tagging terms
 
 #### Resource Paths
-- `ResourcePath`
-- `DereferenceableIDs`
-- `ConventionalIDs`
+- `ResourcePath` - Resource path for entity container child, can be relative to xml:base and the request URL
+- `DereferenceableIDs` - Entity-ids are URLs that locate the identified entity
+- `ConventionalIDs` - Entity-ids follow OData URL conventions
 
 #### Permissions
-- `Permissions`
+- `Permissions` - Permissions available for a property. The value of 2 is reserved for future use.
+
+| Permission | Value |
+|------------|-------|
+|    None    |   0   |
+|    Read    |   1   |
+|  ReadWrite |   3   |
 
 #### Metadata Extensions
-- `Immutable`
-- `Computed`
-- `IsURL`
-- `AcceptableMediaTypes`
+- `Immutable` - A value for this non-key property can be provided on insert and remains unchanged on update
+- `Computed` - A value for this property is generated on both insert and update
+- `IsURL` - Properties and terms annotated with this term MUST contain a valid URL
+- `AcceptableMediaTypes` - Lists the MIME types acceptable for the annotated entity type marked with HasStream="true" or the annotated stream property
 - `MediaType`
-- `IsMediaType`
-- `OptimisticConcurrency`
+- `IsMediaType` - Properties and terms annotated with this term MUST contain a valid MIME type
+- `OptimisticConcurrency` - Data modification requires the use of Etags. A non-empty collection contains the set of properties that are used to compute the ETag
 
 ## Capabilities
 The Capabilities vocabulary aims to provide a way for service authors to describe certain capabilities of an OData Service.
