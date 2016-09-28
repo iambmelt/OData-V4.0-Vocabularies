@@ -4,7 +4,7 @@ A cheatsheet for OData Core, Capability, and Measures Vocabularies
 ### Disclaimer
 I take no responsibility for the correctness or currency of this data. The authoritative source can be found [here](http://www.odata.org/vocabularies/).
 
-The contents of this document are derived from works bearing the following copyright
+The contents of this document are adapted from works bearing the following copyright
 
 ```
 OData Version 4.0
