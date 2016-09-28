@@ -84,7 +84,7 @@ A client can try, but it needs to be prepared to handle an error in case the fol
 
 #### Request Capabilities
 - `SupportedFormats` - Media types of supported formats, including format parameters
-- `AcceptableEncodings` - List of acceptable compression methods for ($batch) requests, e.g. gzip
+- `AcceptableEncodings` - List of acceptable compression methods for (`$batch`) requests, e.g. `gzip`
 
 #### Supported Preferences
 - `AsynchronousRequestsSupported`
