@@ -62,8 +62,8 @@ The Capabilities vocabulary aims to provide a way for service authors to describ
 ## Measures
 Terms describing monetary amounts and measured quantities
 
-- `ISOCurrency` - The currency for this monetary amount as an [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code<br />Type: `Edm.String`<br />AppliesTo: `Property`
+- `ISOCurrency` - The currency for this monetary amount as an [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code
 
-- `Scale` - The number of significant decimal places in the scale part (less than or equal to the number declared in the Scale facet)<br />**Type:** `Edm.Byte`<br />AppliesTo: `Property`<br />RequiresType: `Edm.Decimal`
+- `Scale` - The number of significant decimal places in the scale part (less than or equal to the number declared in the Scale facet)
 
-- `Unit` - The unit of measure for this measured quantity, e.g. cm for centimeters or % for percentages<br />Type: `Edm.String`<br />AppliesTo: `Property`
+- `Unit` - The unit of measure for this measured quantity, e.g. cm for centimeters or % for percentages
