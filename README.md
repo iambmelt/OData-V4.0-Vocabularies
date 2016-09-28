@@ -74,10 +74,43 @@ A client can try, but it needs to be prepared to handle an error in case the fol
 - Deletability
 
 #### Conformance Level
+- `ConformanceLevel`
+
+| ConformanceLevelType |
+|:--------------------:|
+|        Minimal       |
+|     Intermediate     |
+|       Advanced       |
+
 #### Request Capabilities
+- `SupportedFormats` - Media types of supported formats, including format parameters
+- `AcceptableEncodings` - List of acceptable compression methods for ($batch) requests, e.g. gzip
+
 #### Supported Preferences
+- `AsynchronousRequestsSupported`
+- `BatchContinueOnErrorSupported`
+- `IsolationSupported`
+- `CallbackSupported`
+- `CrossJoinSupported`
+- `ChangeTracking`
+
 #### Query Capabilities
+- `CountRestrictions`
+- `NavigationRestrictions`
+- `IndexableByKey`
+- `TopSupported`
+- `SkipSupported`
+- `BatchSupported`
+- `FilterFunctions`
+- `FilterRestrictions`
+- `SortRestrictions`
+- `ExpandRestrictions`
+- `SearchRestrictions`
+
 #### Data Modification Capabilities
+- `InsertRestrictions`
+- `UpdateRestrictions`
+- `DeleteRestrictions`
 
 ## Measures
 Terms describing monetary amounts and measured quantities.
